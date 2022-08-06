@@ -9,7 +9,7 @@
 
 header {
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1010;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,11 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
-
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 .logo img {
   width: 80px;
   height: 60px;
@@ -33,7 +37,7 @@ header nav {
 
 .nav-item-Categories a {
   text-decoration: none;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   padding-bottom: 5px;
   color: black;
   margin-left: 15px;
@@ -50,7 +54,7 @@ header nav {
 }
 .nav-items a {
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   padding-bottom: 5px;
   color: black;
   margin-left: 20px;
@@ -77,8 +81,9 @@ header nav {
 .search-bar input[type="text"] {
   background: transparent;
   border: 0;
+  width: 100%;
   outline: none;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   padding: 0 15px;
 }
 
@@ -87,7 +92,7 @@ header nav {
 }
 .shopping-icon i {
   color: black;
-  font-size: 1.14em;
+  font-size: 1.14rem;
 }
 
 .log-in {
@@ -101,13 +106,13 @@ header nav {
 }
 .log-in a {
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 700;
   color: black;
   background: transparent;
 }
 .log-in i {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 .sign-up {
@@ -122,7 +127,7 @@ header nav {
 }
 .sign-up a {
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 700;
   color: white;
 }
@@ -139,8 +144,55 @@ header nav {
 }
 .globle-icon i {
   color: black;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
+
+.main {
+  width: 80%;
+  margin-top: 0.39rem;
+  height: 400px;
+  background: url(images/clock.jpg) no-repeat;
+  background-position: bottom right;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+.main .main-div {
+  background-color: white;
+  width: 440px;
+  height: 191px;
+  padding: 24px 24px;
+  position: absolute;
+  top: 30px;
+  left: 70px;
+}
+.main h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2.2rem;
+  padding-bottom: 15px;
+}
+.main p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.courses {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 78%;
+  position: relative;
+  background-color: beige;
+  /* display: flex;
+  align-items: center; */
+}
+.hint-for-bord{
+  font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: -.05rem;
+}
+
 /* @media screen and (max-width:600px ) {
     .logo{
        display: none;

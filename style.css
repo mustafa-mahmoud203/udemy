@@ -200,7 +200,7 @@ main {
   letter-spacing: -0.05rem;
   color: black;
 }
-.hint-for-this-section p{
+.hint-for-this-section p {
   color: black;
 }
 .group-of-courses dl {
@@ -239,7 +239,8 @@ main {
   margin-top: 0.6rem;
   line-height: 1.2;
   width: 75%;
-  font-size: 0.9rem;color: black;
+  font-size: 0.9rem;
+  color: black;
 }
 
 /* Explore Bottom Style */
@@ -327,70 +328,76 @@ footer {
   background: rgba(0, 0, 0, 0.85);
   padding: 30px 55px;
 }
+
 .items-lang {
- display: flex;
- justify-content: space-between;
- width: 100%;
-}
-.footer-list-items {
-width:700px;
   display: flex;
   justify-content: space-between;
-  
+  width: 100%;
 }
-
+.footer-list-items {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list-items a {
+  color: white;
+}
+.footer-list-items a:hover {
+  text-decoration: underline;
+}
 footer dl {
   color: white;
   font-size: 0.8rem;
- line-height: 30px;
+  line-height: 30px;
 }
 .lang {
   border: 1px solid white;
- width: 130px;
- height: 40px;
- display: flex;
- justify-content: center;
- align-items: center;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.lang:hover{
+.lang:hover {
   background-color: gray;
 }
-.lang i,p{
- color: white;
- padding-right: 10px;
+.lang i,
+p {
+  color: white;
+  padding-right: 10px;
 }
 
-.foo-udemy-icon{
+.foo-udemy-icon {
   margin-top: 30px;
   margin-bottom: -25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.foo-logo img{
+.foo-logo img {
   width: 120px;
   height: 90px;
   margin-top: 2px;
 }
 
-.end-foo{
+.end-foo {
   color: white;
   font-size: 0.8rem;
 }
 
-@media screen and (max-width:700px ) {
+@media screen and (max-width: 700px) {
   .lang {
-  margin-top: 25px;
+    margin-top: 25px;
   }
   .items-lang {
     justify-content: space-between;
     flex-direction: column;
-   }
-   .footer-list-items {
+  }
+  .footer-list-items {
     flex-direction: column;
-     justify-content: space-between;
-   }
-   .foo-udemy-icon{
+    justify-content: space-between;
+  }
+  .foo-udemy-icon {
     flex-direction: column;
   }
-} 
+}

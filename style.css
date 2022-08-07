@@ -5,6 +5,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "poppins";
+  text-decoration: none;
 }
 
 header {
@@ -157,7 +158,7 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
-.main .main-div {
+.main-div {
   background-color: white;
   width: 440px;
   height: 191px;
@@ -174,27 +175,222 @@ main {
 .main p {
   font-size: 1.2rem;
   line-height: 1.4rem;
+  color: black;
 }
 
+/* Container Courses Style */
 .courses {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   width: 78%;
   position: relative;
-  background-color: beige;
+  color: black;
+  /* background-color: beige; */
   /* display: flex;
   align-items: center; */
 }
-.hint-for-bord{
-  font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
-    font-weight: 700;
-    font-size: 2rem;
-    letter-spacing: -.05rem;
+
+/* Choose from group of courses Style */
+.hint-for-bord {
+  font-family: SuisseWorks, Georgia, Times, times new roman, serif,
+    apple color emoji, segoe ui emoji, segoe ui symbol;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.05rem;
+  color: black;
+}
+.hint-for-this-section p{
+  color: black;
+}
+.group-of-courses dl {
+  width: 64%;
+  display: flex;
+  margin-top: 0.7rem;
+  justify-content: space-between;
+}
+.group-of-courses a {
+  text-decoration: none;
+  color: #6a6f73;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.group-of-courses a:hover {
+  color: black;
+  font-weight: 600;
 }
 
-/* @media screen and (max-width:600px ) {
-    .logo{
-       display: none;
-    }
-} */
+/* Course Description */
+.container-courses {
+  width: 100%;
+  border: 0.4px solid #6a6f73;
+  margin-top: 0.6rem;
+  padding: 35px 35px;
+}
+.container-courses h2 {
+  font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+}
+.container-courses p {
+  margin-top: 0.6rem;
+  line-height: 1.2;
+  width: 75%;
+  font-size: 0.9rem;color: black;
+}
+
+/* Explore Bottom Style */
+.Explore-bottom {
+  margin-top: 1rem;
+  border: 1px solid black;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s ease;
+}
+.Explore-bottom:hover {
+  background-color: #f7f9fa;
+  transform: scale(1.1);
+}
+.Explore-bottom a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.list-of-courses {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-of-courses a {
+  /* width: 220; */
+  margin-right: 25px;
+}
+/* Course Card Style */
+
+.style-courses-card {
+  width: 240px;
+  margin-top: 3rem;
+}
+.style-courses-card img {
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+.style-courses-card h4 {
+  color: black;
+  line-height: 1.4rem;
+}
+.author-name {
+  color: #6a6f73;
+  font-size: 1rem;
+}
+.rating-course {
+  display: flex;
+  align-items: center;
+  margin-top: -9px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.rating-num {
+  color: #b4690e;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-right: 6px;
+}
+.rating-stars {
+  width: 25%;
+  height: 100%;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.rating-stars img {
+  width: 100%;
+}
+.num-of-students {
+  color: #6a6f73;
+  font-size: 0.9rem;
+}
+.course-price span {
+  color: black;
+  font-weight: 700;
+}
+
+/* Footer style */
+footer {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px 55px;
+}
+.items-lang {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+}
+.footer-list-items {
+width:700px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+footer dl {
+  color: white;
+  font-size: 0.8rem;
+ line-height: 30px;
+}
+.lang {
+  border: 1px solid white;
+ width: 130px;
+ height: 40px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.lang:hover{
+  background-color: gray;
+}
+.lang i,p{
+ color: white;
+ padding-right: 10px;
+}
+
+.foo-udemy-icon{
+  margin-top: 30px;
+  margin-bottom: -25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foo-logo img{
+  width: 120px;
+  height: 90px;
+  margin-top: 2px;
+}
+
+.end-foo{
+  color: white;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width:700px ) {
+  .lang {
+  margin-top: 25px;
+  }
+  .items-lang {
+    justify-content: space-between;
+    flex-direction: column;
+   }
+   .footer-list-items {
+    flex-direction: column;
+     justify-content: space-between;
+   }
+   .foo-udemy-icon{
+    flex-direction: column;
+  }
+} 

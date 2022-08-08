@@ -1,0 +1,118 @@
+@media screen and (max-width: 540px) {
+  .main-section h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hint-for-this-section {
+    display: none;
+  }
+  .description-course-content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .lang {
+    margin-bottom: 25px;
+  }
+  .items-lang {
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .footer-list-items {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .foo-udemy-icon {
+    flex-direction: column;
+  }
+  
+  
+}
+
+@media screen and (max-width: 800px) {
+  .drawer-menu,
+  .search-icon {
+    display: inline;
+  }
+  
+  .nav-item-Categories,
+  .container-search,
+  .nav-items,
+  .nav-bottoms {
+    display: none;
+  }
+
+  .group-of-courses dl {
+    flex-direction: column;
+    line-height: 20px;
+  }
+  .main-section {
+    margin-bottom: 170px;
+    background: url(images/clock-small.jpg) no-repeat;
+    background-position: bottom right;
+  }
+  .main-section-div {
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .main-section h1 {
+    font-size: 2.2rem;
+  }
+  .main-section p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and ( min-width:800px) and (max-width: 1000px) {
+  .main-section h1 {
+    font-size: 1.5rem;
+  }
+  .main-section p {
+    font-size: 1rem;
+  }
+} 
+
+
+@media screen and (max-width: 920px) {
+  .nav-items {
+    display: none;
+  }
+  .main-section {
+    background: url(images/clock-small.jpg) no-repeat;
+    background-position: bottom right;
+  }
+  
+}
+@media screen and (max-width: 1020px) {
+  .group-of-courses dl {
+    flex-direction: column;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .udemy-business {
+    display: none;
+  }
+}
+@media screen and   (max-width: 600px) {
+  .list-of-courses {
+    grid-template-columns: repeat(1,1fr);}
+} 
+ @media screen and (min-width: 600px) and (max-width: 900px) {
+  .list-of-courses {
+    grid-template-columns: repeat(2,1fr);
+  }
+} 
+@media screen and ( min-width:900px) and (max-width: 1200px) {
+  .list-of-courses {
+    grid-template-columns: repeat(3,1fr);}
+} 
+
+@media screen and ( min-width:1200px) and (max-width: 1500px) {
+  .list-of-courses {
+    grid-template-columns: repeat(4,1fr);}
+} 

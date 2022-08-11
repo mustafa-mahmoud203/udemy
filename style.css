@@ -182,12 +182,14 @@ main {
 .main-section {
   width:90%;
   margin-top: 0.39rem;
-  height: 400px;
+  min-height: 400px;
   background: url(images/clock.jpg) no-repeat;
-  background-position: bottom ;
+  background-position: 77% ;
+  background-size: cover;
   position: relative;
   margin-right: auto;
   margin-left: auto;
+  
 }
 .main-section-div {
   background-color: white;
@@ -349,6 +351,7 @@ main {
   margin-right: 8px;
   display: flex;
   align-items: center;
+  padding-top: 5px;
 }
 .rating-stars img {
   width: 100%;
@@ -374,9 +377,11 @@ footer {
   width: 100%;
 }
 .footer-list-items {
-  width: 700px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+
+  gap: 10%;
+  /* justify-content: space-between; */
 }
 .footer-list-items a {
   color: white;

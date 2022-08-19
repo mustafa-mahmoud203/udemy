@@ -360,7 +360,7 @@ main {
   color: #6a6f73;
   font-size: 0.9rem;
 }
-.course-price span {
+.course-price  {
   color: black;
   font-weight: 700;
 }

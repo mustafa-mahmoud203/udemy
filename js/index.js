@@ -1,18 +1,31 @@
 let coursesRespons;
 async function getCourses() {
     coursesRespons= await (await fetch("http://localhost:3000/tabs")).json();
-   let coursesCards=document.querySelector(".list-of-courses");
-    for(let i=0;i<coursesRespons.length;i++){
-        for(let j=0;j<coursesRespons[i].courses.length;j++)
-        coursesCards.appendChild( getCard(coursesRespons[i].courses[j]));
+   
+   showCards(coursesRespons);
+    
+}
+
+function showCards(courseRespons){
+    let coursesCards=document.querySelector(".list-of-courses");
+
+    coursesCards.innerHTML = ''; 
+
+    for(let i=0;i<courseRespons.length;i++){
+        for(let j=0;j<courseRespons[i].courses.length;j++)
+        coursesCards.appendChild( getCard(courseRespons[i].courses[j]));
 
     }
 }
+
 getCourses();
+
 function getCard(course){
 
     let coursesLink=document.createElement('a');
          coursesLink.href=course.link;
+        //coursesLink.target=blank;
+       
     let coursesCard=document.createElement('div');
          coursesCard.className="style-courses-card"
          coursesLink.appendChild(coursesCard);
@@ -31,7 +44,6 @@ function getCard(course){
     let coursesCardRating=document.createElement('span');
          coursesCard.append(coursesCardImg,coursesCardH5,coursesCardParagraph,coursesCardRating,coursesCardPrice);
  
-  
     let coursesCardRatingNum=document.createElement('span')
         coursesCardRatingNum.className="rating-num";
         coursesCardRatingNum.textContent=course.rating;
@@ -44,9 +56,10 @@ function getCard(course){
         coursesCardNumOFStudents.textContent= course.views;
         coursesCardRating.append(coursesCardRatingNum,coursesCardRatingStars,coursesCardNumOFStudents)
       
-   
+
     return coursesLink;
   }
+
   function createCoursesStars( rating){
       let ratingStars=document.createElement('span');
       for(let i=0;i<parseInt(rating);i++){
@@ -67,3 +80,20 @@ function getCard(course){
     return ratingStars;
   }
  
+
+function filterCourses(){
+    let filterEl = document.querySelector(".filter-el") 
+    let filterQuery = filterEl.value.toLowerCase(); 
+
+    let filteredCourses = coursesRespons.filter(tab => {
+        return tab.name === filterQuery; // return true if tab.name === query
+    });
+    
+    if(filterQuery!=='')
+        showCards(filteredCourses);
+     else 
+        showCards(coursesRespons);
+
+}
+let searchBtn = document.getElementById("search_btn") 
+searchBtn.addEventListener('click', filterCourses) 

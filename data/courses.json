@@ -1,7 +1,7 @@
 {
   "tabs": [
     {
-      "name": "Python",
+      "name": "python",
       "heading": "Python Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "description": "Python Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui error provident in, fugit ut aspernatur tenetur nemo illo vitae itaque voluptas corporis ratione odit. Mollitia soluta magnam illum et.",
       "courses": [
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "name": "Flutter",
+      "name": "flutter",
       "heading": "Flutter Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "description": "Flutter Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui error provident in, fugit ut aspernatur tenetur nemo illo vitae itaque voluptas corporis ratione odit. Mollitia soluta magnam illum et.",
       "courses": [
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "name": "Web Development",
+      "name": "web development",
       "heading": "Web Development Lorem ipsum dolor sit amet consectetur adipisicing elit.",
       "description": "Web Development Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui error provident in, fugit ut aspernatur tenetur nemo illo vitae itaque voluptas corporis ratione odit. Mollitia soluta magnam illum et.",
       "courses": [

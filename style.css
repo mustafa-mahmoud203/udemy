@@ -77,10 +77,9 @@ header nav {
   border-radius: 50px;
   padding: 10px 15px;
 }
-.search-bar button{
+.search-bar button {
   border: none;
   background: transparent;
-  
 }
 .search-bar input[type="text"] {
   background: transparent;
@@ -180,16 +179,15 @@ main {
   width: 100%;
 }
 .main-section {
-  width:90%;
+  width: 90%;
   margin-top: 0.39rem;
   min-height: 400px;
   background: url(images/clock.jpg) no-repeat;
-  background-position: 77% ;
+  background-position: 77%;
   background-size: cover;
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  
 }
 .main-section-div {
   background-color: white;
@@ -308,10 +306,9 @@ main {
 }
 
 .list-of-courses {
-
   display: grid;
-  grid-gap:16px ;
-  grid-template-columns: repeat(5,1fr);
+  grid-gap: 16px;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /* Course Card Style */
@@ -323,7 +320,7 @@ main {
   width: 100%;
   margin-bottom: 0.8rem;
 }
-.style-courses-card  h5{
+.style-courses-card h5 {
   color: black;
   line-height: 1.4rem;
   /* font-size: 1rem; */
@@ -332,6 +329,9 @@ main {
   color: #6a6f73;
   font-size: 0.8rem;
   margin-top: 5px;
+  
+
+  margin-bottom: 5px;
 }
 .rating-course {
   display: flex;
@@ -347,34 +347,30 @@ main {
   margin-right: 6px;
 }
 .rating-stars {
-  display: inline-block;
   width: 25%;
   height: 100%;
   margin-right: 8px;
-  margin-top: 5px;
- 
-  margin-bottom: 11px;
+
 }
-.rating-stars img {
-  width: 100%;
+.gold-star {
+  font-size: 10px;
+  color: gold;
+}
+.gray-star {
+  font-size: 10px;
+  color: #ddd;
 }
 .num-of-students {
   color: #6a6f73;
   font-size: 0.8rem;
 }
-.course-price  {
+.course-price {
+  margin-top: 11px;
   color: black;
   font-weight: 700;
 }
 
-.gold-star{
-  font-size: 10px;
-  color: gold;
-}
-.gray-star{
-  font-size: 10px;
-  color: #ddd;
-}
+
 /* Footer style */
 footer {
   background: rgba(0, 0, 0, 0.85);
@@ -438,4 +434,3 @@ p {
   color: white;
   font-size: 0.8rem;
 }
-

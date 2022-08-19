@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media-query.css" />
-    <script src="js/index.js"></script>
+  
   </head>
   <body>
     <header>
@@ -24,11 +24,15 @@
         <div class="nav-item-Categories"><a>Categories</a></div>
 
         <div class="container-search">
-          <form class="search-bar">
-            <button type="submit">
+          <form class="search-bar" id="search">
+            <button type="submit" id="search_btn">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <input type="text" name="q" placeholder="Search for anything" />
+            <input
+              type="text"
+              placeholder="Search for anything"
+              class="filter-el"
+            />
           </form>
         </div>
 
@@ -107,7 +111,7 @@
             </p>
             <div class="Explore-bottom"><a href="#">Explore Python</a></div>
           </div>
-            <!-- list-of-courses get from JS file -->
+          <!-- list-of-courses get from JS file -->
           <div class="list-of-courses"></div>
         </div>
       </section>
@@ -158,5 +162,6 @@
         <div class="end-foo">© 2022 Udemy, Inc.</div>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

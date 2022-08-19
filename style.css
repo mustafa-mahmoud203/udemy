@@ -331,6 +331,7 @@ main {
 .author-name {
   color: #6a6f73;
   font-size: 0.8rem;
+  margin-top: 5px;
 }
 .rating-course {
   display: flex;
@@ -342,29 +343,38 @@ main {
 .rating-num {
   color: #b4690e;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.85rem;
   margin-right: 6px;
 }
 .rating-stars {
+  display: inline-block;
   width: 25%;
   height: 100%;
   margin-right: 8px;
-  display: flex;
-  align-items: center;
-  padding-top: 5px;
+  margin-top: 5px;
+ 
+  margin-bottom: 11px;
 }
 .rating-stars img {
   width: 100%;
 }
 .num-of-students {
   color: #6a6f73;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .course-price  {
   color: black;
   font-weight: 700;
 }
 
+.gold-star{
+  font-size: 10px;
+  color: gold;
+}
+.gray-star{
+  font-size: 10px;
+  color: #ddd;
+}
 /* Footer style */
 footer {
   background: rgba(0, 0, 0, 0.85);

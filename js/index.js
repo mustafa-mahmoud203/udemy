@@ -81,7 +81,8 @@ function getCard(course){
   }
  
 
-function filterCourses(){
+function filterCourses(e){
+    e.preventDefault();
     let filterEl = document.querySelector(".filter-el") 
     let filterQuery = filterEl.value.toLowerCase(); 
 
@@ -95,5 +96,14 @@ function filterCourses(){
         showCards(coursesRespons);
 
 }
+
 let searchBtn = document.getElementById("search_btn") 
 searchBtn.addEventListener('click', filterCourses) 
+
+
+
+
+
+
+
+

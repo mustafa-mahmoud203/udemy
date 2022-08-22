@@ -243,12 +243,14 @@ main {
   margin-top: 0.7rem;
   justify-content: space-between;
 }
-.group-of-courses a {
+.group-of-courses button {
   color: #6a6f73;
   font-size: 0.8rem;
   font-weight: 600;
+  border: none;
+  background: transparent;
 }
-.group-of-courses a:hover {
+.group-of-courses button:hover {
   color: black;
   font-weight: 600;
 }
@@ -329,7 +331,6 @@ main {
   color: #6a6f73;
   font-size: 0.8rem;
   margin-top: 5px;
-  
 
   margin-bottom: 5px;
 }
@@ -350,7 +351,6 @@ main {
   width: 25%;
   height: 100%;
   margin-right: 8px;
-
 }
 .gold-star {
   font-size: 10px;
@@ -369,7 +369,6 @@ main {
   color: black;
   font-weight: 700;
 }
-
 
 /* Footer style */
 footer {

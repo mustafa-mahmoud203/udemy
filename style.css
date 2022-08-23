@@ -234,23 +234,17 @@ main {
 .hint-for-this-section p {
   color: black;
 }
-.group-of-courses {
+.nav {
   width: 100%;
+   margin-top: 0.7rem;
 }
-.group-of-courses dl {
+.nav a{
   width: 75%;
-  display: flex;
-  margin-top: 0.7rem;
-  justify-content: space-between;
+margin-right: 20px;
+color: #6a6f73;
 }
-.group-of-courses button {
-  color: #6a6f73;
-  font-size: 0.8rem;
-  font-weight: 600;
-  border: none;
-  background: transparent;
-}
-.group-of-courses button:hover {
+
+.nav a:hover {
   color: black;
   font-weight: 600;
 }
@@ -307,11 +301,12 @@ main {
   font-size: 0.9rem;
 }
 
-.list-of-courses {
+.grid-list-of-courses {
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr); 
 }
+
 
 /* Course Card Style */
 

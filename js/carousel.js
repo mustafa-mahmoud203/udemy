@@ -1,48 +1,62 @@
-export const createCarousel = (course) => {
-  let mainDivCarouser = document.createElement("div");
-  mainDivCarouser.className = "row";
+import { getCard } from "./show-card.js";
+export const createSwiper = (courses) => {
+  let courseDiv;
+  const container = document.querySelector(".swiper-wrapper");
+  container.innerHTML="";
+  
+  courses.forEach(course => {
+    course.courses.forEach((val) => {
+      courseDiv = getCard(val);
+      const swip = document.createElement("div");
+      swip.classList.add("swiper-slide");
+      swip.appendChild(courseDiv);
+      
+      container.appendChild(swip);
+    });
+  });
 
-  let carouselSlide = document.createElement("div");
-  carouselSlide.classList = "carousel slide";
-  carouselSlide.id = course.name;
-  carouselSlide.setAttribute("data-bs-ride", carousel);
-
-  const prev = carouselBtn("prev", course.name);
-
-  const next = carouselBtn("next", course.name);
-
-  carouselSlide.append(prev, next);
-  mainDivCarouser.appendChild(carouselSlide);
-
-  return carouselSlide;
 };
 
-export const createInner = () => {
-  let carouselInner = document.createElement("div");
-  carouselInner.className = "carousel-inner";
-  return carouselInner;
-};
+export const getSeiper = () => {
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 4,
+    slidesPerColumn: 2,
+    spaceBetween: 30,
+    // Optional parameters
+    direction: "horizontal",
 
-export const createItem = () => {
-  const carouselItem = document.createElement("div");
-  carouselItem.classList = "carousel-item";
-  return carouselItem;
-};
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-export const carouselBtn = (val, id) => {
-  let ControlBtn = document.createElement("button");
-  ControlBtn.className = `carousel-control-${val}`;
-  ControlBtn.type = "button";
-  ControlBtn.setAttribute("data-bs-target", `#${id}`);
-  ControlBtn.setAttribute("data-bs-slide", val);
-
-  let ControlBtnIcon = document.createElement("span");
-  ControlBtnIcon.className = `carousel-control-${val}-icon`;
-  ControlBtnIcon.setAttribute("aria-hidden", true);
-  let ControlBtnIconVisuallyHidden = document.createElement("span");
-  ControlBtnIconVisuallyHidden.className = "visually-hidden";
-  ControlBtnIconVisuallyHidden.textContent = val;
-
-  ControlBtn.append(ControlBtnIcon, ControlBtnIconVisuallyHidden);
-  return ControlBtn;
+    breakpoints: {
+      // when window width is >= 1px
+      1: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 575px
+      575: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 767px
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      // when window width is >= 1399px
+      1399: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    },
+  });
 };

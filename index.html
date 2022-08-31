@@ -16,6 +16,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media-query.css" />
   </head>
@@ -96,23 +101,24 @@
         <div class="nav"></div>
 
         <div class="container-courses">
-          <div class="description-course-content">
-            <span>Expand your career opportunities with Python</span>
-            <p>
-              Take one of Udemy's range of Python courses and learn how to
-              codeusing this incredibly useful language. Its simple syntax and
-              readability makes Python perfect for Flask, Django, data science,
-              and machine learning. You'll learn how to build everything from
-              games to sites to apps. Choose from a range of courses that will
-              appeal to...
-            </p>
-            <div class="Explore-bottom"><a href="#">Explore Python</a></div>
-          </div>
+          <div class="description-course-content"></div>
           <!-- list-of-courses get from JS file -->
-          <div class="list-of-courses">
-         
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
+      </section>
+
+      <section>
+        <div class="top-categories"></div>
       </section>
     </main>
     <footer>
@@ -172,6 +178,8 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="js/index.js" type="module"></script>
   </body>
 </html>

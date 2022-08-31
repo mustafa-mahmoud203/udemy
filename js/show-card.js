@@ -1,17 +1,17 @@
-export function showCards(courseRespons) {
-  let coursesCards = document.querySelector(".list-of-courses");
+// export function showCards(courseRespons) {
+//   let coursesCards = document.querySelector(".list-of-courses");
 
-  // coursesCards.innerHTML = '';
-  let blockOfCourses = document.createElement("div");
-  blockOfCourses.className = "grid-list-of-courses";
-  for (let i = 0; i < courseRespons.length; i++) {
-    for (let j = 0; j < courseRespons[i].courses.length; j++)
-      blockOfCourses.appendChild(getCard(courseRespons[i].courses[j]));
-  }
-  coursesCards.appendChild(blockOfCourses);
-}
+//   // coursesCards.innerHTML = '';
+//   let blockOfCourses = document.createElement("div");
+//   blockOfCourses.className = "grid-list-of-courses";
+//   for (let i = 0; i < courseRespons.length; i++) {
+//     for (let j = 0; j < courseRespons[i].courses.length; j++)
+//       blockOfCourses.appendChild(getCard(courseRespons[i].courses[j]));
+//   }
+//   coursesCards.appendChild(blockOfCourses);
+// }
 
-function getCard(course) {
+export function getCard(course) {
   let coursesLink = document.createElement("a");
   coursesLink.href = course.link;
   //coursesLink.target=blank;
@@ -55,7 +55,7 @@ function getCard(course) {
     coursesCardRatingStars,
     coursesCardNumOFStudents
   );
-
+console.log(coursesLink)
   return coursesLink;
 }
 

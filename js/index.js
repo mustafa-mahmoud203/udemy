@@ -31,7 +31,7 @@ let allCourses = await getCourses();
 createNavTaps(allCourses);
 
 //CoursesDescription 
-createCoursesDescription();
+
 
 
 
@@ -40,11 +40,14 @@ let navLink = nav.querySelectorAll(".nav-link");
 
 
 let defultCourses= filterCourses("python",allCourses);
-createSwiper(defultCourses)
+createSwiper(defultCourses);
+createCoursesDescription(defultCourses);
 
 navLink.forEach((item, index) => {
   item.addEventListener("click", ()=>{
    let filteredCourses= filterCourses(item.textContent,allCourses);
+  
+   createCoursesDescription(filteredCourses);
    createSwiper(filteredCourses)
   })
  

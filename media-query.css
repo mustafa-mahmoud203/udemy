@@ -12,6 +12,10 @@
   .list-of-courses {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .top-categories-maindiv{
+    grid-template-columns: repeat(3,1fr);
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -76,8 +80,9 @@
   .foo-udemy-icon {
     flex-direction: column;
   }
-  .list-of-courses {
-    grid-template-columns: repeat(2, 1fr);
+  
+  .top-categories-maindiv{
+    grid-template-columns: repeat(2,1fr);
   }
 }
 @media screen and (max-width: 575px) {
@@ -91,14 +96,14 @@
   .description-course-content {
     display: none;
   }
-
-  .list-of-courses {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 @media screen and (max-width: 380px) {
   .main-section {
     margin-bottom: 190px;
+  }
+
+  .top-categories-maindiv{
+    grid-template-columns: repeat(1,1fr);
   }
 }

@@ -1,8 +1,8 @@
 import { createNavTaps } from "./tabs.js";
-import { filterCourses} from "./filter-courses.js";
+import { filterCourses } from "./filter-courses.js";
 import { showTopCategoriesCard } from "./top-categories.js";
-import { createSwiper, getSeiper } from "./carousel.js";
-import {createCoursesDescription} from "./courses-description.js";
+import { createSwiper, getSwiper } from "./carousel.js";
+import { createCoursesDescription } from "./courses-description.js";
 
 //getCourses
 const getCourses = async () => {
@@ -21,8 +21,6 @@ const getCategories = async () => {
 let allCategories = await getCategories();
 let allCourses = await getCourses();
 
-
-
 //Search-filter-Courses.js
 // let searchBtn = document.getElementById("search_btn");
 // searchBtn.addEventListener("click", searchCourses(allCourses,filterCourses));
@@ -30,34 +28,23 @@ let allCourses = await getCourses();
 //Nav courses Taps
 createNavTaps(allCourses);
 
-//CoursesDescription 
-
-
-
+//CoursesDescription
 
 let nav = document.querySelector(".nav");
 let navLink = nav.querySelectorAll(".nav-link");
 
-
-let defultCourses= filterCourses("python",allCourses);
+let defultCourses = filterCourses("python", allCourses);
 createSwiper(defultCourses);
 createCoursesDescription(defultCourses);
 
 navLink.forEach((item, index) => {
-  item.addEventListener("click", ()=>{
-   let filteredCourses= filterCourses(item.textContent,allCourses);
-  
-   createCoursesDescription(filteredCourses);
-   createSwiper(filteredCourses)
-  })
- 
-  
+  item.addEventListener("click", () => {
+    let filteredCourses = filterCourses(item.textContent, allCourses);
+
+    createCoursesDescription(filteredCourses);
+    createSwiper(filteredCourses);
+  });
 });
-
-
-// Swiper section
-
-getSeiper();
 
 // Top Categories section
 showTopCategoriesCard(allCategories);

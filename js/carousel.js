@@ -2,22 +2,28 @@ import { getCard } from "./show-card.js";
 export const createSwiper = (courses) => {
   let courseDiv;
   const container = document.querySelector(".swiper-wrapper");
-  container.innerHTML="";
-  
-  courses.forEach(course => {
+  container.innerHTML = "";
+
+  let allCards = [];
+
+  courses.forEach((course) => {
+    let courseCards = [];
     course.courses.forEach((val) => {
       courseDiv = getCard(val);
       const swip = document.createElement("div");
       swip.classList.add("swiper-slide");
       swip.appendChild(courseDiv);
-      
-      container.appendChild(swip);
-    });
-  });
 
+      courseCards.push(swip);
+    });
+    allCards.push(...courseCards);
+    console.log(courseCards);
+    container.append(...allCards);
+    getSwiper();
+  });
 };
 
-export const getSeiper = () => {
+export const getSwiper = () => {
   const swiper = new Swiper(".swiper", {
     slidesPerView: 4,
     slidesPerColumn: 2,
